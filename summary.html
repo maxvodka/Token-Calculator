@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Token Calculator - Summary</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <h1>Token Usage Summary</h1>
+  <div id="breakdown">
+    <!-- Token breakdown table will be injected here -->
+  </div>
+
+  <h2>Send Report</h2>
+  <form id="reportForm">
+    <div class="input-field">
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" required>
+    </div>
+    <div class="input-field">
+      <label for="userEmail">Business Email:</label>
+      <input type="email" id="userEmail" name="userEmail" required>
+    </div>
+    <button type="button" id="sendReportBtn">Send Report</button>
+  </form>
+
+  <!-- jsPDF from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/summary.js"></script>
+</body>
+</html>

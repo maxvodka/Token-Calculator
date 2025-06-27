@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Token Calculator</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <h1>AI Token Calculator</h1>
+  <form id="themeForm">
+    <!-- Theme: Bots & Virtual Agents -->
+    <div class="theme">
+      <label><input type="checkbox" id="themeBots" value="bots"> Bots & Virtual Agents</label>
+      <div class="submenu" id="submenu-bots">
+        <label><input type="checkbox" id="voiceBots" value="voiceBots"> Voice Bots</label>
+        <label><input type="checkbox" id="digitalBots" value="digitalBots"> Digital Bots</label>
+        <label><input type="checkbox" id="virtualAgent" value="virtualAgent"> Virtual Agent</label>
+      </div>
+    </div>
+
+    <!-- Theme: Agent Assistance -->
+    <div class="theme">
+      <label><input type="checkbox" id="themeAssistance" value="assistance"> Agent Assistance</label>
+      <div class="submenu" id="submenu-assistance">
+        <label><input type="checkbox" id="agentCopilot" value="agentCopilot"> Agent Copilot</label>
+        <label><input type="checkbox" id="aiTranslate" value="aiTranslate"> AI Translate</label>
+      </div>
+    </div>
+
+    <!-- Theme: AI Quality Assurance -->
+    <div class="theme">
+      <label><input type="checkbox" id="themeQA" value="qa"> AI Quality Assurance</label>
+      <div class="submenu" id="submenu-qa">
+        <label><input type="checkbox" id="speechNamed" value="speechNamed"> Speech & Text Analytics – Named</label>
+        <label><input type="checkbox" id="speechConcurrent" value="speechConcurrent"> Speech & Text Analytics – Concurrent</label>
+        <label><input type="checkbox" id="aiScoring" value="aiScoring"> AI Scoring</label>
+        <label><input type="checkbox" id="aiSummary" value="aiSummary"> AI Summary & Insights</label>
+      </div>
+    </div>
+
+    <!-- Theme: Proactive Engagement -->
+    <div class="theme">
+      <label><input type="checkbox" id="themeEngagement" value="engagement"> Proactive Engagement</label>
+      <div class="submenu" id="submenu-engagement">
+        <label><input type="checkbox" id="predictiveEngagement" value="predictiveEngagement"> Predictive Engagement</label>
+        <label><input type="checkbox" id="predictiveRouting" value="predictiveRouting"> Predictive Routing</label>
+      </div>
+    </div>
+
+    <!-- Theme: Messaging & Social -->
+    <div class="theme">
+      <label><input type="checkbox" id="themeMessaging" value="messaging"> Messaging & Social</label>
+      <div class="submenu" id="submenu-messaging">
+        <label><input type="checkbox" id="facebookMessenger" value="facebookMessenger"> Facebook Messenger</label>
+        <label><input type="checkbox" id="instagramDM" value="instagramDM"> Instagram DM</label>
+        <label><input type="checkbox" id="whatsappMessaging" value="whatsappMessaging"> WhatsApp Messaging</label>
+        <label><input type="checkbox" id="xDM" value="xDM"> X (Twitter) DM</label>
+        <label><input type="checkbox" id="socialPosts" value="socialPosts"> Social Posts (Ingestion & Responses)</label>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <button type="button" id="nextBtn">Next</button>
+  </form>
+  <script src="assets/js/page1.js"></script>
+</body>
+</html>

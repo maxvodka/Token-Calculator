@@ -1,0 +1,105 @@
+/* Base Reset & Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #003366;
+}
+
+/* Form Container */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Theme Section */
+.theme {
+  margin-bottom: 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+}
+.theme > label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  color: #003366;
+}
+.theme > label input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+/* Submenu Accordion */
+.submenu {
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  display: none;
+}
+.submenu.visible {
+  display: block;
+}
+.submenu label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+  color: #333333;
+}
+.submenu label input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Buttons */
+button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0072CE;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: #005bb5;
+}
+button:focus {
+  outline: 2px solid #ff6600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+  form {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    text-align: center;
+  }
+}
